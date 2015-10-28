@@ -3,7 +3,8 @@
 namespace Admin\Repository;
 
 use Doctrine\ORM\EntityRepository;
-class AbstractRepository extends EntityRepository{
+
+abstract class AbstractRepository extends EntityRepository{
 	
 	public function findFilter(array $filtro,$order = array())
 	{
@@ -80,6 +81,10 @@ class AbstractRepository extends EntityRepository{
 		}
 	
 		return $arrayResult;
+	}
+	
+	public function findToArray($id){
+		return $this->find($id)->toArray();
 	}
 	
 }

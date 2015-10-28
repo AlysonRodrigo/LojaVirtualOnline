@@ -12,7 +12,8 @@ return array(
     	'Admin',
     	'DoctrineModule',
     	'DoctrineORMModule',
-    	'EdpModuleLayouts'
+    	'EdpModuleLayouts',
+    	'Core'
     ),
 
     // These are various options for the listeners attached to the ModuleManager
